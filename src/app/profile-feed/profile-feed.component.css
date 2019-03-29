@@ -1,20 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .feed-post{
   display: flex;
-  border: 1px solid black;
   width: 70%;
   height: 30%;
 }
 
+input{
+  height:100%;
+  width: 100%;
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
 .start-post{
+  height: 100%;
   width: 60%;
-  border-right: 1px solid black;
 }
 
 .post-picture{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   width: 20%;
-  border-right: 1px solid black;
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 
 .post-video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   width: 20%;
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
