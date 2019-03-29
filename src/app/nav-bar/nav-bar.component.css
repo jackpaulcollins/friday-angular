@@ -12,11 +12,12 @@
   width: 80%;
   display: flex;
   justify-content: space-between;
-  border-right: 1px solid gray
+  border-right: 1px solid black;
 }
 
 #nav-bar-search{
-  height: 40%;
+  height: 30%;
+  width: 40%;
 }
 
 .nav-bar-left-left{
@@ -32,10 +33,13 @@
   width: 25%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .nav-bar-right{
   height: 100%;
+  width: 20%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
