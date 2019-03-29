@@ -1,0 +1,15 @@
+app-nav-bar{
+  margin-bottom: 5%;
+}
+
+app-home-page-profile-tile{
+  position: absolute;
+  margin: 10% 5% 2% 5%;
+}
+
+.main-body{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border: solid red 1px;
+}
