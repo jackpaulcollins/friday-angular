@@ -3,7 +3,7 @@
   justify-content: space-between;
   background-color: #1aff66;
   height: 5vw;
-  width: 100%;
+  width: 100vw;
 }
 
 .nav-bar-left{
@@ -41,4 +41,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.nav-bar-picture{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
