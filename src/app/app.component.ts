@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import {ProfileFeedComponent} from './profile-feed/profile-feed.component'
+import { Post } from './models/post.model'
 
 @Component({
   selector: 'app-root',
