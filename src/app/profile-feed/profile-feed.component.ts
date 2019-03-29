@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileFeedComponent implements OnInit {
 
+  postBody = null;
+
+  showPostBody(){
+    this.postBody = 1;
+  }
   constructor() { }
 
   ngOnInit() {
