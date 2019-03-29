@@ -1,0 +1,21 @@
+.find-friends{
+  display: flex;
+  flex-direction: column;
+  width: 28.5%;
+  height: 100%;
+  border: 1px solid gray;
+  margin-left: 5%;
+}
+
+.header{
+  text-align: center;
+  border-bottom: solid gray 1px;
+}
+
+input{
+  width: 70%;
+}
+             
+.new-request{
+  border-bottom: 1px solid gray;
+}
