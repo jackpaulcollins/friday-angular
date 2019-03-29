@@ -12,6 +12,10 @@ export class ProfileFeedComponent implements OnInit {
   showPostBody(){
     this.postBody = 1;
   }
+
+  createPost(){
+    this.postBody = null;
+  }
   constructor() { }
 
   ngOnInit() {

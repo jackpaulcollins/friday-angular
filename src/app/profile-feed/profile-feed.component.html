@@ -1,4 +1,4 @@
-<div class="feed-post">
+<div class="feed-post" *ngIf="!postBody">
   <div class="start-post" (click)="showPostBody()">
     <input id="start-post" type="text" name="" value="" placeholder="Start a post">
   </div>
@@ -13,5 +13,5 @@
 
 <div class="post-body" *ngIf="postBody">
   <input id="post" type="text" name="" value="" placeholder="What's up?">
-  <button type="button" name="button">Share</button>
+  <button type="button" name="button" (click)="createPost()">Share</button>
 </div>
