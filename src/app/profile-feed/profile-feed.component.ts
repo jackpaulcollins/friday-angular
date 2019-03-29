@@ -8,9 +8,6 @@ import { Post } from "../models/post.model"
 })
 export class ProfileFeedComponent  {
 
-
-  @Output() clickSender = new EventEmitter();
-
   postBody = null;
 
   profileFeedPosts: Post[] = [
@@ -24,12 +21,6 @@ export class ProfileFeedComponent  {
   createPost(){
     this.postBody = null;
   }
-
-  postSubmitted(newPost: Post){
-    this.clickSender.emit(newPost)
-  }
-
-
 
   constructor() { }
 

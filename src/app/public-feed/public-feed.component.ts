@@ -8,13 +8,15 @@ import { Post } from '../models/post.model'
 })
 export class PublicFeedComponent implements OnInit {
 
-  @Input() publicFeedPosts: Post[] = [
-  ];
+  @Input() publicFeedPosts: Post[];
 
-  
+
+
   constructor() { }
 
   ngOnInit() {
   }
 
 }
+
+console.log(this.publicFeedPosts);

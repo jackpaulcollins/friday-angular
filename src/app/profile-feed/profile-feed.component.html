@@ -14,3 +14,4 @@
   <input id="post" type="text" #userPost placeholder="What's up?">
   <button type="button" name="button" (click)="createPost(); postSubmitted(userPost.value);">Share</button>
 </div>
+<app-public-feed [publicFeedPosts]="profileFeedPosts"></app-public-feed>
