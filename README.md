@@ -4,19 +4,23 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Features
 
-currently GoalBuddy's layout is being built, and functionality is limited. This current iteration shows a stripped down version of what I hope a user's home page will look like.
+Currently GoalBuddy's layout is being built, and functionality is limited. This current iteration shows a stripped down version of what I hope a user's home page will look like, as well as basic login/register page, and a "post-detail" page.
 
 Since logging in is not yet available, the application only works as a "psuedo-user." This psuedo-user can create a new post which is saved in a FireBase database and displayed on a live feed. Eventually this feed will display posts for all real users.
 
-In development is the ability to create a new account. Currently a user can input their email, desired username, and password. This input will be saved on the Firebase database in the "users" table. Eventually the login field will be formatted to check if a user has created an account.
+The ability to create a new account is in development. Currently a user can input their email, desired username, and password. This input will be saved on the Firebase database in the "users" table. Eventually the login field will be formatted to query the user database to ensure that a logging-in user has already created an account (and entered the correct username and password, of course).
 
 Currently a pseudo-user can navigate between several pages. They can click "logout" to return back to the "login" page. They can also click on a post in the live feed to view a "post-detail" page which is currently displaying the post in it's own page.
 
 ## Coming Features
 
-The idea behind Goalbuddy is to create a social network for people to connect with other's that share similar goals. The primary feature is shared goal setting, and the ability for user's to establish a relationship of accountability.
+The idea behind Goalbuddy is to create a social network for people to connect with other users that share similar goals. The primary feature is shared goal setting, and the ability for user's to establish a relationship of accountability.
 
-Currently Goalbuddy's code only represents a mock up of a user's homepage. The primary feature of the homepage will be a feed that allows users to share, and view other's, posts about their progress towards their goals. In the future, the homepage will also allow users to search for potential connections with other users. These "pending connections" will originate from a separate page where users will create a "request" for an accountability partner.
+A primary feature of the site will be the ability for a user to create a "pending buddy request", and to view said requests made by other users. If a user finds a goal they would like to actively participate in they can "connect" with the user that original created the request. Once users are connected they will have the ability to negotiate the parameters of the relationship.
+
+Another primary feature is the social aspect of GoalBuddy. Like MyFitnessPal, users will be able to share their progress towards their goal, and like, comment, etc. on posts highlighting progress.
+
+A secondary feature of Goalbuddy is gamifying established relationships in order to incentivize users to take full advantage of the platform. How this will be executed is not entirely clear at this point, however it will involve some form of reward for when users successfully complete the goals they set. 
 
 ## Functionality progress
 
