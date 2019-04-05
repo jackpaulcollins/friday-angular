@@ -11,7 +11,7 @@ import { Post } from '../models/post.model';
 export class PublicFeedComponent {
 
   @Input() childFeedPosts: Post[];
-  
+
 
 
 

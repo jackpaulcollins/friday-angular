@@ -1,18 +1,18 @@
-import { Component} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Post } from "../models/post.model"
+import { PostService } from '../post.service'
 
 @Component({
   selector: 'app-profile-feed',
   templateUrl: './profile-feed.component.html',
-  styleUrls: ['./profile-feed.component.css']
+  styleUrls: ['./profile-feed.component.css'],
+  providers: [PostService]
 })
-export class ProfileFeedComponent  {
+export class ProfileFeedComponent implements OnInit  {
 
   postBody = null;
 
-  profileFeedPosts: Post[] = [
-    new Post("hello")
-  ];
+  profileFeedPosts: Post[];
 
   showPostBody(){
     this.postBody = 1;
@@ -27,9 +27,10 @@ export class ProfileFeedComponent  {
     this.profileFeedPosts.push(newPost);
   }
 
-  constructor() { }
+  constructor(private postService: PostService) { }
 
   ngOnInit() {
+    this.profileFeedPosts = this.postService.getPosts();
   }
 
 }
