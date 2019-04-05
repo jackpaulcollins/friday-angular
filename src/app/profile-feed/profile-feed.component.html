@@ -8,4 +8,4 @@
   <input id="post" type="text" #userPost placeholder="What's up?">
   <button (click)="createPost(); postSubmitted(userPost.value);">Share</button>
 </div>
-<app-public-feed [childFeedPosts]="profileFeedPosts"></app-public-feed>
+{{profileFeedPosts}}

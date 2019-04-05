@@ -14,6 +14,7 @@ export class ProfileFeedComponent implements OnInit  {
 
   profileFeedPosts: Post[];
 
+
   showPostBody(){
     this.postBody = 1;
   }
@@ -24,13 +25,14 @@ export class ProfileFeedComponent implements OnInit  {
 
   postSubmitted(post: string){
     const newPost = new Post(post);
-    this.profileFeedPosts.push(newPost);
   }
 
-  constructor(private postService: PostService) { }
+  constructor(private postService: PostService) {}
 
   ngOnInit() {
     this.profileFeedPosts = this.postService.getPosts();
+    console.log(this.profileFeedPosts);
   }
+
 
 }

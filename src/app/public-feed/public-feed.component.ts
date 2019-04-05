@@ -1,24 +1,26 @@
 import { Component, Input } from '@angular/core';
 import { Post } from '../models/post.model';
+import { PostService } from '../post.service'
 
 
 @Component({
   selector: 'app-public-feed',
   templateUrl: './public-feed.component.html',
-  styleUrls: ['./public-feed.component.css']
+  styleUrls: ['./public-feed.component.css'],
+  providers: [PostService]
 })
 
 export class PublicFeedComponent {
 
-  @Input() childFeedPosts: Post[];
+  postToDisplay;
 
 
 
 
-  constructor() { }
+  constructor(private postService: PostService) { }
 
   ngOnInit() {
-    console.log(this.childFeedPosts);
+    this.postToDisplay = this.postService.getPosts();
   }
 
 }
