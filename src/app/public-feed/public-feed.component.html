@@ -1,12 +1,3 @@
-<div class="public-posts">
-  <div class="post-top">
-    <h3>Name</h3>
-    <p>time</p>
-  </div>
-  <div class="post-content">
-    <h5>{{childFeedPosts[0].content}}</h5>
-  </div>
-  <div class="post-foot">
-    <span>like </span><span>comment </span><span>share</span>
-  </div>
+<div class="live-feed" *ngFor="let post of childFeedPosts">
+  <div class="post"><h5>{{post.content}}</h5></div>
 </div>
