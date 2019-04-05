@@ -12,6 +12,6 @@
 
 <div class="post-body" *ngIf="postBody">
   <input id="post" type="text" #userPost placeholder="What's up?">
-  <button type="button" name="button" (click)="createPost(); postSubmitted(userPost.value);">Share</button>
+  <button (click)="createPost(); postSubmitted(userPost.value);">Share</button>
 </div>
-<app-public-feed [publicFeedPosts]="profileFeedPosts"></app-public-feed>
+<app-public-feed [childFeedPosts]="profileFeedPosts"></app-public-feed>

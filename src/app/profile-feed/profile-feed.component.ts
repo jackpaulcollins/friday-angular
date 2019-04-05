@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component} from '@angular/core';
 import { Post } from "../models/post.model"
 
 @Component({
@@ -20,6 +20,11 @@ export class ProfileFeedComponent  {
 
   createPost(){
     this.postBody = null;
+  }
+
+  postSubmitted(post: string){
+    const newPost = new Post(post);
+    this.profileFeedPosts.push(newPost);
   }
 
   constructor() { }
