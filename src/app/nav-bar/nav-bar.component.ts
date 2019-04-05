@@ -11,6 +11,10 @@ export class NavBarComponent implements OnInit {
   constructor(private router: Router) { }
 
   goHome(){
+    this.router.navigate(['home']);
+  }
+
+  logout(){
     this.router.navigate(['']);
   }
 
