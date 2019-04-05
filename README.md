@@ -6,17 +6,17 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-##Features
+## Features
 
 currently GoalBuddy's layout is being built, and functionality is limited. This current iteration shows a stripped down version of what I hope a user's home page will look like.
 
-##Coming Features
+## Coming Features
 
 The idea behind Goalbuddy is to create a social network for people to connect with other's that share similar goals. The primary feature is shared goal setting, and the ability for user's to establish a relationship of accountability.
 
 Currently Goalbuddy's code only represents a mock up of a user's homepage. The primary feature of the homepage will be a feed that allows users to share, and view other's, posts about their progress towards their goals. In the future, the homepage will also allow users to search for potential connections with other users. These "pending connections" will originate from a separate page where users will create a "request" for an accountability partner.
 
-##Functionality progress
+## Functionality progress
 
 (In order of priority)
 
