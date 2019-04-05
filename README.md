@@ -56,9 +56,6 @@ In order to setup Goalbuddy on your machine you will need to:
 
 The Firebase documentation can be found [Here](https://firebase.google.com/docs/)
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
 ## Running unit tests
 
