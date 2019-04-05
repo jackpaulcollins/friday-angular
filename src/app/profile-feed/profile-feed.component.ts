@@ -1,6 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 import { Post } from "../models/post.model"
 import { PostService } from '../post.service'
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-profile-feed',
@@ -12,7 +13,7 @@ export class ProfileFeedComponent implements OnInit  {
 
   postBody = null;
 
-  profileFeedPosts: Post[];
+  profileFeedPosts: FirebaseListObservable<any[]>;
 
 
   showPostBody(){

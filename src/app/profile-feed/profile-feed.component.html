@@ -8,4 +8,6 @@
   <input id="post" type="text" #userPost placeholder="What's up?">
   <button (click)="createPost(); postSubmitted(userPost.value);">Share</button>
 </div>
-{{profileFeedPosts}}
+<div *ngFor="let post of profileFeedPosts | async">
+  {{post.content}}
+</div>

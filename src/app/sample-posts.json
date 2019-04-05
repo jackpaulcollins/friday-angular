@@ -1,3 +1,5 @@
 {
-  "content": "hello"
+  "posts": [{
+    "content": "Hello"
+    }]
 }
