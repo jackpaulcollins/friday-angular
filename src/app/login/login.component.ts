@@ -17,9 +17,13 @@ export class LoginComponent implements OnInit {
     this.router.navigate(['home']);
   }
 
-  createAccount(username: string, password: string){
-    const newUser: User = new User(username,password);
+  createAccount(email: string, username: string, password: string){
+    const newUser: User = new User(email,username,password);
     this.userService.addUser(newUser);
+  }
+
+  clearForm(){
+
   }
 
   ngOnInit() {

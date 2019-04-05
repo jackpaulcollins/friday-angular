@@ -5,6 +5,12 @@
   <input #password placeholder="Password">
   <div class="buttons">
     <button (click)="login(userName.value, password.value)">login</button>
-    <button (click)="createAccount(userName.value, password.value)">Register</button>
   </div>
+</div>
+
+<div class="registration">
+  <input #email placeholder="email address">
+  <input #userName placeholder="User Name">
+  <input #password placeholder="Password">
+  <button (click)="createAccount(email.value, userName.value, password.value); clearForm();">Signup!</button>
 </div>
