@@ -49,10 +49,12 @@ Run `ng generate component component-name` to generate a new component. You can 
 In order to setup Goalbuddy on your machine you will need to:
 
 1.) Clone it from [here](https://github.com/jackpaulcollins/friday-angular)
+
 2.) Navigate to the folder in your command line and run "npm i" to install all dependencies
+
 3.) "run ng serve --open" to open to the development server on your local machine
 
-*note _If you would like to utilize your own database you will need to register and configure one at [Firebase](www.firebase.google.com)_*
+*Note: _If you would like to utilize your own database you will need to register and configure one at [Firebase](www.firebase.google.com)_*
 
 The Firebase documentation can be found [Here](https://firebase.google.com/docs/)
 
