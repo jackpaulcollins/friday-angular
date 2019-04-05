@@ -1,4 +1,4 @@
 
-<div *ngFor="let post of postToDisplay | async">
-  <h5>{{post.content}}</h5>
+<div class="post"*ngFor="let post of postToDisplay | async" (click)="goToPost(post)">
+  <h3>content: {{post.content}}</h3>
 </div>

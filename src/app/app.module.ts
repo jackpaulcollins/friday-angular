@@ -15,6 +15,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { PostDetailComponent } from './post-detail/post-detail.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -34,6 +35,7 @@ export const firebaseConfig = {
     PublicFeedComponent,
     LoginPageComponent,
     HomepageComponent,
+    PostDetailComponent,
   ],
   imports: [
     BrowserModule,

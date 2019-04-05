@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Post } from './models/post.model';
-import { POSTS } from './mock-posts';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
@@ -13,6 +12,10 @@ export class PostService {
 
   getPosts(){
     return this.posts;
+  }
+
+  getPostById(postId: string){
+    return this.database.object('posts/' + postId)
   }
 
   addPost(newPost: Post){
