@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Post } from '../models/post.model';
-import { PostService } from '../post.service'
+import { PostService } from '../post.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 
 @Component({
@@ -12,7 +13,7 @@ import { PostService } from '../post.service'
 
 export class PublicFeedComponent {
 
-  postToDisplay;
+  postToDisplay: FirebaseListObservable<any[]>;
 
 
 

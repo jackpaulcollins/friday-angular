@@ -1,3 +1,4 @@
-<div class="live-feed" *ngFor="let post of childFeedPosts">
-  <div class="post"><h5>{{postToDisplay}}</h5></div>
+
+<div *ngFor="let post of postToDisplay | async">
+  <h5>{{post.content}}</h5>
 </div>
