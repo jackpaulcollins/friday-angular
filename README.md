@@ -10,6 +10,12 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 currently GoalBuddy's layout is being built, and functionality is limited. This current iteration shows a stripped down version of what I hope a user's home page will look like.
 
+Since logging in is not yet available, the application only works as a "psuedo-user." This psuedo-user can create a new post which is saved in a FireBase database and displayed on a live feed. Eventually this feed will display posts for all real users.
+
+In development is the ability to create a new account. Currently a user can input their email, desired username, and password. This input will be saved on the Firebase database in the "users" table. Eventually the login field will be formatted to check if a user has created an account.
+
+Currently a pseudo-user can navigate between several pages. They can click "logout" to return back to the "login" page. They can also click on a post in the live feed to view a "post-detail" page which is currently displaying the post in it's own page.
+
 ## Coming Features
 
 The idea behind Goalbuddy is to create a social network for people to connect with other's that share similar goals. The primary feature is shared goal setting, and the ability for user's to establish a relationship of accountability.
@@ -37,6 +43,15 @@ Currently Goalbuddy's code only represents a mock up of a user's homepage. The p
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+#Setup
+
+In order to setup Goalbuddy on your machine you will need to clone it from [here](github.com/jackpaulcollins/goalbuddy.git)
+Then navigate to the folder in your command line and run "npm i" to install all dependencies
+Then "run ng serve --open" to open to the development server on your local machine
+If you would like to utilize your own database you will need to register one at [Firebase](www.firebase.google.com)
+
+The Firebase documentation can be found [Here](https://firebase.google.com/docs/)
 
 ## Build
 
