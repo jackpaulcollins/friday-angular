@@ -8,7 +8,8 @@ import { Post } from '../models/post.model';
 @Component({
   selector: 'app-post-detail',
   templateUrl: './post-detail.component.html',
-  styleUrls: ['./post-detail.component.css']
+  styleUrls: ['./post-detail.component.css'],
+  providers: [PostService]
 })
 export class PostDetailComponent implements OnInit {
   postId: string;

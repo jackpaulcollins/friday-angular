@@ -18,8 +18,6 @@ export class PublicFeedComponent {
   postToDisplay: FirebaseListObservable<any[]>;
 
 
-
-
   constructor(private router: Router, private postService: PostService) { }
 
   ngOnInit() {
