@@ -2,10 +2,6 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
 ## Features
 
 currently GoalBuddy's layout is being built, and functionality is limited. This current iteration shows a stripped down version of what I hope a user's home page will look like.
@@ -44,7 +40,7 @@ Currently Goalbuddy's code only represents a mock up of a user's homepage. The p
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-#Setup
+# Setup
 
 In order to setup Goalbuddy on your machine you will need to clone it from [here](github.com/jackpaulcollins/goalbuddy.git)
 Then navigate to the folder in your command line and run "npm i" to install all dependencies
