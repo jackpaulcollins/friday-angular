@@ -20,7 +20,7 @@ A primary feature of the site will be the ability for a user to create a "pendin
 
 Another primary feature is the social aspect of GoalBuddy. Like MyFitnessPal, users will be able to share their progress towards their goal, and like, comment, etc. on posts highlighting progress.
 
-A secondary feature of Goalbuddy is gamifying established relationships in order to incentivize users to take full advantage of the platform. How this will be executed is not entirely clear at this point, however it will involve some form of reward for when users successfully complete the goals they set. 
+A secondary feature of Goalbuddy is gamifying established relationships in order to incentivize users to take full advantage of the platform. How this will be executed is not entirely clear at this point, however it will involve some form of reward for when users successfully complete the goals they set.
 
 ## Functionality progress
 
@@ -46,10 +46,13 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 # Setup
 
-In order to setup Goalbuddy on your machine you will need to clone it from [here](github.com/jackpaulcollins/goalbuddy.git)
-Then navigate to the folder in your command line and run "npm i" to install all dependencies
-Then "run ng serve --open" to open to the development server on your local machine
-If you would like to utilize your own database you will need to register one at [Firebase](www.firebase.google.com)
+In order to setup Goalbuddy on your machine you will need to:
+
+1.) Clone it from [here](https://github.com/jackpaulcollins/friday-angular)
+2.) Navigate to the folder in your command line and run "npm i" to install all dependencies
+3.) "run ng serve --open" to open to the development server on your local machine
+
+*note _If you would like to utilize your own database you will need to register and configure one at [Firebase](www.firebase.google.com)_*
 
 The Firebase documentation can be found [Here](https://firebase.google.com/docs/)
 
