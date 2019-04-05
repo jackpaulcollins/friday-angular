@@ -14,6 +14,7 @@ const appRoutes: Routes = [
   {
     path: 'posts/:id',
     component: PostDetailComponent
-  }];
+  },
+  ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
