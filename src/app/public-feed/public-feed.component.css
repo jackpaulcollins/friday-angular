@@ -1,15 +1,16 @@
 .live-feed{
   font-family: 'Source Sans Pro', sans-serif;
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid gray;
-  border-radius: 10px;
-  width: 70%;
+  align-items: center;
+  width: 100%;
 }
 
 .post{
+  width: 100%;
   text-align: center;
   padding: auto;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 50px;
 }
