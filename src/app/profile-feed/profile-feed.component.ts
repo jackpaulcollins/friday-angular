@@ -13,7 +13,6 @@ export class ProfileFeedComponent implements OnInit  {
 
   postBody = null;
 
-  profileFeedPosts: FirebaseListObservable<any[]>;
 
 
   showPostBody(){
@@ -25,14 +24,13 @@ export class ProfileFeedComponent implements OnInit  {
   }
 
   postSubmitted(post: string){
-    const newPost = new Post(post);
+    const newPost: Post = new Post(post);
+    this.postService.addPost(newPost)
   }
 
   constructor(private postService: PostService) {}
 
   ngOnInit() {
-    this.profileFeedPosts = this.postService.getPosts();
-    console.log(this.profileFeedPosts);
   }
 
 
