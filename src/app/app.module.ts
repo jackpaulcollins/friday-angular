@@ -13,7 +13,6 @@ import { PublicFeedComponent } from './public-feed/public-feed.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { LoginPageComponent } from './login-page/login-page.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { LoginComponent } from './login/login.component';
@@ -34,7 +33,6 @@ export const firebaseConfig = {
     ProfileFeedComponent,
     FindFriendsComponent,
     PublicFeedComponent,
-    LoginPageComponent,
     HomepageComponent,
     PostDetailComponent,
     LoginComponent,
